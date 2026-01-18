@@ -17,9 +17,13 @@ const Navbar = ({ onSearch }) => {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo - Genişliği sabitleyerek ortanın kaymasını engelleriz */}
-          <div className="flex-shrink-0 flex items-center gap-2">
-            <Link href="/" className="text-2xl font-black tracking-tighter text-yellow-500">
-              IMDB<span className="text-white ml-0.5">TOP</span>
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/" className="group flex items-center gap-1">
+              <span className="text-2xl font-black tracking-tighter text-white group-hover:text-yellow-500 transition-colors uppercase">
+                {/* Buraya sevgilinin adını yazıyorsun */}
+                Hüda's <span className="text-yellow-500 group-hover:text-white transition-colors">Movies</span>
+              </span>
+              <span className="text-red-600 animate-pulse ml-1 text-xl">❤️</span>
             </Link>
           </div>
 
